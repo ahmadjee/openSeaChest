@@ -27,3 +27,4 @@ matrix:
       skip_cleanup: true
       on:
         repo: ahmadjee/openSeaChest
+        tag: true
