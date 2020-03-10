@@ -22,11 +22,11 @@ matrix:
     script: make release
     deploy:
       provider: releases
-      file_glob: true
-      skip_cleanup: true
-      file: openseachest_exes/*
       api_key:
         secure: wkNKnZEv3JQ8eyNWQDKt6eH4becLyqkJmZ4EVBfGoTQ9OHj4sSb2eRR9E1l/u1HFHzA0DFeEKSb25BcmIt0/1I1voKCGFTqLXUTDK6H5ehbkke6hWXy7uSjjtbxLbTGGhrQjDwqdbpOXGYI92kGJbZh1oifsL4ARcP7GaKNJhGUkbBpArsbWFdKB8Z4WUINKwVJQs5Ts0zc1dFTvN3cvcPqzzVL4jlohNkCcykbwRc8ASmucqwGuK3FiTV/NQsZB7KkW5ZicglEzj20fn/OQF7Rg4atFJLdlKCPtmU4eSqDxHOwWbiuHFfoOihu+CkW+qiSy0jJqMKJ1uhl26uK1o1tUYrOOpuA7OGcLv4oKH/sozsfwWzCYDhoyjljlG81CtJ4cSW4wGkc9lz+VwvNZGDFEHeG3XL3Oa/KCcyX+1OFNwgyVFnaPucP7Kn62OCd10VVw+Hx3K2YBGbGmNkzI2deQBzxMeVVmvd+PeF0KKf5JrgH57I/z815UtmMD5m0hGjkL+ynCUlkRbWYCbVQ0XAqkED7bA6KBW+5EIIJNOlOW/M8X0VC9Vhy0+jtiOOmU+n9g50wjJaAJhXop/njPSv9KA65mUoLw1VCdInIIsd1AVpcryXI/Qb3N1AXbcBZHlPoD9npNB+W4yQqYWpIMCE8RgkvPTrT3LDlX5we1og8=
+      file_glob: true
+      file: openseachest_exes/*
+      skip_cleanup: true
       on:
         repo: ahmadjee/openSeaChest
         tags: true
