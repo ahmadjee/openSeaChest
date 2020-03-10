@@ -1,6 +1,4 @@
-# CI for openseaChest through Travis CI
 language: c
-
 branches:
   only:
   - master
@@ -23,23 +21,9 @@ matrix:
     deploy:
       provider: releases
       api_key:
-        secure: wkNKnZEv3JQ8eyNWQDKt6eH4becLyqkJmZ4EVBfGoTQ9OHj4sSb2eRR9E1l/u1HFHzA0DFeEKSb25BcmIt0/1I1voKCGFTqLXUTDK6H5ehbkke6hWXy7uSjjtbxLbTGGhrQjDwqdbpOXGYI92kGJbZh1oifsL4ARcP7GaKNJhGUkbBpArsbWFdKB8Z4WUINKwVJQs5Ts0zc1dFTvN3cvcPqzzVL4jlohNkCcykbwRc8ASmucqwGuK3FiTV/NQsZB7KkW5ZicglEzj20fn/OQF7Rg4atFJLdlKCPtmU4eSqDxHOwWbiuHFfoOihu+CkW+qiSy0jJqMKJ1uhl26uK1o1tUYrOOpuA7OGcLv4oKH/sozsfwWzCYDhoyjljlG81CtJ4cSW4wGkc9lz+VwvNZGDFEHeG3XL3Oa/KCcyX+1OFNwgyVFnaPucP7Kn62OCd10VVw+Hx3K2YBGbGmNkzI2deQBzxMeVVmvd+PeF0KKf5JrgH57I/z815UtmMD5m0hGjkL+ynCUlkRbWYCbVQ0XAqkED7bA6KBW+5EIIJNOlOW/M8X0VC9Vhy0+jtiOOmU+n9g50wjJaAJhXop/njPSv9KA65mUoLw1VCdInIIsd1AVpcryXI/Qb3N1AXbcBZHlPoD9npNB+W4yQqYWpIMCE8RgkvPTrT3LDlX5we1og8=
+        secure: bEQ9WuxaMMqRbDGn2W9SERdwOOHahW3JSDgxiOjH+LSNls2PgKaIF1CmFA1BxgJlC8kFB4OxDIvUN3i5O/7zmocHRO93Decy8rNGQZCuEY8043vgZwy/98TLXFC0EKKCpVPgc9h8PXkMZ24PCILcaGedJr10rCXqVzNOwYMEouw9plMuYH2HciSrd7imztjdOCItuayevhCV9+YWwmYwkqfgvkqLVVZUtMrtTbtmHIRX4+R4M0ZTuCgDeiZu8wuwibM4hkVlNBo+sq3DabeQnnnG22+a9eLYdZEgJ4VqOIYCYaAWNa2yiR+X6unRYMClDtp1Ne8vZeudMz3e/i+7JSs2KO+9XGtGhEAtvJ+Ghjhp6cgKsb34DBwE9lzzqQyT/xqQ0+MP+oznuzp6hOP787ZfVuxifAw/3OgMRg1am4IddI5JhNHZwNnlqm/XGdfBqy36LHXmVBd1DycT24bzAX28IoewM5en/Os8D+hzHoiCPrPdyYwCNoH8jZ32wwgJTuHQ0xsgR/tj94yyEKKFzygMRoQqfMWMbWrBl6nRhf166ZSqtC1V01KvBISxUcMJVgzh+oL63gRu7VLix9yNzlFO1sKuOumR+jxEIP8mZ9lxPqS+UQUMCYMqUhVou8ER0gABVlByNbpEL08h67uZh25iJYKGxWqdVlh5orIH0FI=
       file_glob: true
       file: openseachest_exes/*
       skip_cleanup: true
       on:
         repo: ahmadjee/openSeaChest
-        tags: true
-  #- os: windows
-  #  env:
-  #  - MSBUILD_PATH="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin"
-  #  #- MSDEPLOY_PATH="c:\Users\travis\build\Seagate\openSeaChest\Make\VS.2017\x64\Static-Release\*"
-  #  before_script: 
-  #  - cd "Make\VS.2017"
-  #  - pwd
-  #  script:
-  #  - export PATH=$MSBUILD_PATH:$PATH
-  #  - echo $PATH
-  #  - MSBuild.exe //p:Configuration=Static-Release //p:Platform=x64
-  #  - echo %errorlevel%
-
